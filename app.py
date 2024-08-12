@@ -18,7 +18,7 @@ app.secret_key = os.getenv("FLASK_SECRET_KEY","default_secret_key")
 
 
 
-@app.route("/medical",methods=['GET'])
+@app.route("/",methods=['GET'])
 def homepage():
     return render_template('chat.html')
 
